@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Event listener for all button elements
     // $("button").on("click", function() {
 
-    var topicsArray = ["reaction", "frenchies", "sunsets", "babies", "roller coasters", "beaches"];
+    var topicsArray = ["frenchies", "sunsets", "babies", "silly", "beaches", "family", "comedy", "Sun", "fall", "puppies", "cute"];
 
 
 
@@ -31,8 +31,10 @@ $(document).ready(function () {
 
     $(document).on("click", ".topic", function () {
         var topic = $(this).attr("data-name");
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&rating=g&lang=en&api_key=reBu7hG5uVhdgc0Ocacr040Ouwv5LBkV&";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&limit=10&offset=0&rating=g&lang=en&api_key=reBu7hG5uVhdgc0Ocacr040Ouwv5LBkV&";
 
+        $("#gifImages").show();
+        $("#gifImages").empty();
         // performing the AJAX request with the query URL and get method
         $.ajax({
             url: queryURL,
@@ -50,11 +52,13 @@ $(document).ready(function () {
 
                 var topicImage = $("<img>");
                 topicImage.attr("src", results[i].images.fixed_height_still.url);
+                topicImage.attr("src", results[i].images.fixed_width_still.url);
                 topicImage.attr("data-animate", results[i].images.fixed_height.url);
                 topicImage.attr("data-still", results[i].images.fixed_height_still.url);
                 topicImage.addClass("gif");
                 topicImage.attr("data-state", "still");
 
+                
                 topicDiv.append(p);
                 topicDiv.append(topicImage);
                 

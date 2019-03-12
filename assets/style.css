@@ -1,0 +1,57 @@
+
+body {
+    background: lightgoldenrodyellow;
+}
+
+#buttons {
+   padding-top: 30px;
+   padding-bottom: 15px;
+   text-align: center;
+   background: lightgoldenrodyellow;
+}
+
+.topic {
+    margin-right: 15px;
+    background-color: black;
+    color: white;
+    size: 23px;
+}
+
+
+@media (min-width: 576px) {
+
+.jumbotron {
+    padding: 0rem 0rem;
+    padding-bottom: 5px;
+    background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0788/3687/rrmermaid-silver_shop_preview.png");
+} }
+.lead{
+    font-weight: bold;
+}
+.display-4 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    /* margin-left: 30%; */
+}
+p {
+    text-align: center;
+    font-weight: bolder;
+    /* margin-top: -10px; */
+}
+
+.container {
+    align-content: center;
+    background: lightgoldenrodyellow;
+
+}
+.containertwo {
+    text-align: center;
+    margin-bottom: 20px;
+    background: lightgoldenrodyellow;
+}
+#gifImages {
+    margin-left: 50px;
+    display: flex;
+flex-wrap: wrap;
+}
