@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Event listener for all button elements
     // $("button").on("click", function() {
 
-    var topicsArray = ["frenchies", "sunsets", "reactions", "surprised", "babies", "silly", "beaches", "family", "funny", "Sun", "fall", "puppies", "cute"];
+    var topicsArray = ["frenchies", "kitties", "sunsets", "reactions", "surprised", "babies", "silly", "beaches", "family", "funny", "Sun", "fall", "puppies", "cute"];
 
 
 
